@@ -1,24 +1,24 @@
 # Site Settings
 locale: "en-US"
 title: "Fur"
-url: "https://donaldboulton.github.io/fur-jekyll-template/"
+url: "https://filmboxx.github.io/T-shirt-shop/"
 baseurl: "/"
 google_analytics_key: "none"
 google_maps_javascript_api_key: "none"
-snipcart_key: "NDhkOWU1ZGQtNWQyZi00ZDVmLThmYmEtZDFiYmJhYzdmYTE3NjM2NjE0Nzc1OTQ2NzMzMTU5"
+snipcart_key: "ODc4ZGYxMDMtYjBlMy00MGJiLTgzYmUtZDRkOTIxNTBlMTU5NjM2ODg2OTI5NDc4NzMwNjA4"
 languages: ["en"]
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Fur t-shirt store
+description: T-shirt shop on jekyll
 author:
   name: fur
   email: fur@example.com
   twitter: donboulton # twitter username without the @ symbol
   phone: "+1 23456789"
 social:
-  name: Fur Template
+  name: T-shirt shop Template
   links:
-    - https://donaldboulton.github.io/fur-jekyll-template/
+    - https://filmboxx.github.io/T-shirt-shop/
 
 strict_front_matter      : true
 
