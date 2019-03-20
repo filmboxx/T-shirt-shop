@@ -1,0 +1,222 @@
+# Site Settings
+locale: "en-US"
+title: "Fur"
+url: "https://donaldboulton.github.io/fur-jekyll-template/"
+baseurl: "/"
+google_analytics_key: "none"
+google_maps_javascript_api_key: "none"
+snipcart_key: "NDhkOWU1ZGQtNWQyZi00ZDVmLThmYmEtZDFiYmJhYzdmYTE3NjM2NjE0Nzc1OTQ2NzMzMTU5"
+languages: ["en"]
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Fur t-shirt store
+author:
+  name: fur
+  email: fur@example.com
+  twitter: donboulton # twitter username without the @ symbol
+  phone: "+1 23456789"
+social:
+  name: Fur Template
+  links:
+    - https://donaldboulton.github.io/fur-jekyll-template/
+
+strict_front_matter      : true
+
+# Reading Files
+include:
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .env
+  - vendor
+  - .require.content
+  - .jekyll-assets-cache
+  - .jekyll-metadata
+  - .sass-cache
+  - build/js/plugins
+  - build/js/_main.js
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - node_modules
+  - node_modules/
+  - .vs
+  - .vscode
+  - LICENSE
+  - log
+  - Rakefile
+  - template.md
+  - README
+  - README.md
+  - admin/index.js
+  - _src
+  - _images
+  - LICENSE
+  - package.json
+  - README.md
+  - webpack.config.js
+  - yarn-error.log
+  - yarn.lock
+  - config
+  - optimization-fix
+  - optimization-fix-this-file-is-ignored.js
+  - favicon.png
+  - tmp
+  - /docs
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: America/Chicago
+
+collections:
+  staff_members:
+    output: true
+  products:
+    output: true
+  category:
+    output: true
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "default"
+  - scope:
+      path: "/"
+    values:
+      layout: "page"
+  - scope:
+      path: "index.html"
+    values:
+      layout: "default"
+
+# Plugins (previously gems:)
+plugins:
+  - posts_json
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-figure
+  - jekyll-tagging
+  - jekyll-tagging-related_posts
+  - jekyll-redirect-from
+  - lazyload
+  - notice
+  - jemoji
+  - json
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - posts_json
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-figure
+  - jekyll-tagging
+  - jekyll-tagging-related_posts
+  - jekyll-redirect-from
+  - lazyload
+  - notice
+  - jemoji
+  - json
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+jekyll-archives:
+   enabled:
+     - categories
+     - tags
+   layouts:
+     category: archive-taxonomy
+     tag: archive-taxonomy
+   permalinks:
+     category: /categories/:name/
+     tag: /tags/:name/
+# -----------
+# CloudCannon
+
+garment_types:
+  - hat
+  - top
+
+social_icons:
+  - Email
+  - Facebook
+  - Google Plus
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
+  - RSS
+
+_comments:
+  map: Update the map location and display settings.
+  latitude: Coordinates for the center marker on the map.
+  longitude: Coordinates for the center marker on the map.
+  zoom: The zoom level for the map.
+  pricing_table: Update the information in the pricing tables.
+  highlight: Emphasis the text
+  color: The background color used in the plan name and call to action.
+  new_window: Open link in new window
+  description: This is used for facebook shares of the page and google indexing
